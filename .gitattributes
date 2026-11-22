@@ -1,0 +1,8 @@
+# 統一換行符號，避免 Windows / Mac 混用時整份檔案都顯示被改過
+* text=auto eol=lf
+
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.webp binary
+*.gif binary

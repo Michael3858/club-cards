@@ -1,0 +1,33 @@
+name: 新增名片
+description: 把你的自介名片加進名片牆
+title: "[名片] "
+labels: ["card", "good first issue"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        歡迎！填完這張表送出後，照 CONTRIBUTING.md 的 Fork 流程開分支，PR 裡記得寫 `Closes #這個Issue的編號`。
+  - type: input
+    id: github
+    attributes:
+      label: GitHub 帳號
+      description: 會當作資料夾名稱（請用小寫）
+      placeholder: william
+    validations:
+      required: true
+  - type: input
+    id: display-name
+    attributes:
+      label: 目錄上要顯示的名字
+      placeholder: William
+    validations:
+      required: true
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: 開始之前
+      options:
+        - label: 我的名片是 index.html，頭像在 500KB 以下
+          required: true
+        - label: 我已經 Fork 了這個 repo
+          required: true

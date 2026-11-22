@@ -1,0 +1,11 @@
+# 系統自動產生的檔案
+.DS_Store
+Thumbs.db
+
+# 編輯器設定
+.vscode/
+
+# 套件與密碼（絕對不要上傳）
+node_modules/
+.env
+

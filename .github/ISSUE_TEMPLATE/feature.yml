@@ -1,0 +1,30 @@
+name: 新功能
+description: 提議或認領一個新功能
+title: "[功能] "
+labels: ["feature"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        想做現有的 Issue？不用開新的，直接在那個 Issue 底下留言「我來做」就好。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 想解決什麼問題
+      description: 用使用者的角度寫，例如「名片一多，很難找到某個人」
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: 打算怎麼做
+      description: 大概的做法就好，可以之後再改
+  - type: textarea
+    id: done
+    attributes:
+      label: 驗收條件
+      description: 做到什麼程度算完成？每一條都要能被檢查
+      value: |
+        - [ ]
+    validations:
+      required: true
